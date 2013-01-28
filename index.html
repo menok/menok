@@ -1,1 +1,14 @@
-My GitHub Page
+---
+layout: default
+title: qnyf!6 u0 6o1q hw
+---
+
+<h2>{{ page.title }}</h2>
+<p>New arrivals</p>
+<ul>
+	{% for post in site.posts %}
+		<li>{{ post.date | date_to_string }}
+	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+	</a></li>
+	<% endfor %>
+</ul>
